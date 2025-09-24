@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Personal - Hoja de Vida</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f7fb;
+      color:#0f172a;
+      line-height:1.6;
+    }
+    .page{max-width:1000px; margin:24px auto; padding:0 16px;}
+    header{
+      background:#fff;
+      border:1px solid #1051a6;
+      border-radius:14px;
+      padding:20px 24px;
+      margin-bottom:16px;
+    }
+    h1{margin:0 0 6px;}
+    .subtitle{color:#475569; margin:0;}
+    .grid{
+      display:grid; gap:16px;
+      grid-template-columns:320px 1fr;
+    }
+    @media(max-width:860px){.grid{grid-template-columns:1fr;}}
+    .card{
+      background:#fff;
+      border:1px solid #e2e8f0;
+      border-radius:14px;
+      padding:18px 20px;
+      margin-bottom:16px;
+    }
+    h2{margin:0 0 10px; font-size:1.2rem;}
+    h3{margin:12px 0 8px;}
+    img.photo{
+      width:100%;
+      border-radius:12px;
+      border:1px solid #e2e8f0;
+      object-fit:cover;
+    }
+    ul,ol{margin:6px 0 10px 20px;}
+    a{color:#2563eb; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    table{width:100%; border-collapse:collapse;}
+    thead th{background:#f1f5f9; padding:8px; text-align:left;}
+    th,td{border:1px solid #e2e8f0; padding:8px; vertical-align:top;}
+    form{display:grid; gap:10px; max-width:560px;}
+    label{font-weight:600;}
+    input[type="text"],input[type="email"],textarea{
+      width:100%; padding:10px 12px;
+      border:1px solid #e2e8f0; border-radius:10px;
+    }
+    textarea{min-height:120px; resize:vertical;}
+    .btn{
+      border:none; background:#2563eb; color:#fff;
+      padding:10px 14px; border-radius:10px;
+      cursor:pointer; font-weight:600;
+    }
+    .btn:hover{filter:brightness(.95);}
+    @page{size:A4; margin:14mm;}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Sebastián Enrique Carrillo Almanza</h1>
+      <p class="subtitle">Ingeniero de Sistemas • Ciudad: Valledupar, Cesar - Colombia • 
+        <a href="mailto:sebacarrilloalmanza@gmail.com">sebacarrilloalmanza@gmail.com</a>
+      </p>
+    </header>
+
+    <div class="grid">
+      <!-- Columna izquierda -->
+      <aside>
+        <section class="card">
+          <h2>Perfil</h2>
+          <img class="photo" src="Imagen de WhatsApp 2025-09-24 a las 14.57.44_65578125.jpg" alt="Foto personal" style="width:180px; height:180px; border-radius:50%; object-fit:cover; display:block; margin:0 auto; border:3px solid #0c2e5c;" />
+          <p><strong>Contacto</strong><br>
+            <a href="mailto:sebacarrilloalmanza@gmail.com">sebacarrilloalmanza@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/sebastian-carrillo">LinkedIn</a><br>
+            <a href="https://github.com/sebacarrillo">GitHub</a>
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>Desarrollo web (HTML5, CSS3, JavaScript)</li>
+            <li>Flutter & Dart</li>
+            <li>Administración de sistemas Linux</li>
+            <li>Git y GitHub</li>
+            <li>Trabajo en equipo</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Redes</h2>
+          <ul>
+            <li><a href="https://github.com/sebacarrillo">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/sebastian-carrillo">LinkedIn</a></li>
+            <li><a href="https://instagram.com/sebacarrillo">Instagram</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- Columna derecha -->
+      <main>
+        <section class="card">
+          <h2>Presentación</h2>
+          <p>
+            Hola, soy <strong>Sebastián Carrillo Almanza</strong>, Ingeniero de Sistemas de Valledupar, Cesar (Colombia). 
+            Apasionado por la tecnología, el desarrollo de software y la gestión de sistemas. 
+            Me gusta aprender nuevas herramientas, trabajar en proyectos innovadores y aportar soluciones prácticas.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Pasatiempos y Tareas</h2>
+          <div style="display:grid; gap:12px; grid-template-columns:repeat(2,1fr);">
+            <div>
+              <h3>Pasatiempos</h3>
+              <ul>
+                <li>Leer sobre tecnología</li>
+                <li>Escuchar música</li>
+                <li>Hacer ejercicio</li>
+                <li>Programar proyectos personales</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tareas prioritarias</h3>
+              <ol>
+                <li>Desarrollar mi aplicación en Flutter</li>
+                <li>Actualizar proyectos en GitHub</li>
+                <li>Mejorar mis conocimientos en administración de sistemas</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Horario Semanal</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>08:00–10:00</th>
+                <td>Estudio / Lectura</td><td>Proyecto Flutter</td><td>Linux & Servidores</td><td>Estudio</td><td>Investigación</td>
+              </tr>
+              <tr>
+                <th>10:00–12:00</th>
+                <td>Ejercicio</td><td>GitHub</td><td>Clases / Cursos</td><td>Ejercicio</td><td>Clases online</td>
+              </tr>
+              <tr>
+                <th>14:00–16:00</th>
+                <td>Desarrollo personal</td><td>Trabajo en proyectos</td><td>Aplicaciones móviles</td><td>Estudio</td><td>Revisión de código</td>
+              </tr>
+              <tr>
+                <th>16:00–18:00</th>
+                <td>Tiempo libre</td><td>Tiempo libre</td><td>Networking</td><td>Tiempo libre</td><td>Tiempo libre</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Contáctame</h2>
+          <form action="#" method="post">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+            </div>
+            <div>
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tu-correo@ejemplo.com" required />
+            </div>
+            <div>
+              <label for="motivo">Motivo</label>
+              <textarea id="motivo" name="motivo" placeholder="Cuéntame en qué te puedo ayudar" required></textarea>
+            </div>
+            <div>
+              <input type="submit" class="btn" value="Enviar mensaje" />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
